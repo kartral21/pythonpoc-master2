@@ -1,0 +1,5 @@
+Server: ldap.forumsys.com  
+Port: 389
+
+Bind DN: cn=read-only-admin,dc=example,dc=com
+Bind Password: password
