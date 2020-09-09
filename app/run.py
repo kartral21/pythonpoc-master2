@@ -1,4 +1,4 @@
-from source import app
+from src import app
 from config import API_HOST, API_PORT
 
 if __name__ == "__main__":
