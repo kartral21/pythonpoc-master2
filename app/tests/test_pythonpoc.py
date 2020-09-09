@@ -1,7 +1,7 @@
 from unittest.mock import Mock,patch
 from parameterized import parameterized
 import unittest
-from source.flaskpoc.controllers import hello,email_json,json_add
+from source.controllers import hello,email_json,json_add
 from tests.test_constants import *
 
 
