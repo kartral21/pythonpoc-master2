@@ -14,7 +14,7 @@ migrate = Migrate(app, db)
 def not_found(error):
     return '404', 404
 
-from app.flaskpoc.controllers import flaskpoc
+from source.controllers import flaskpoc
 
 app.register_blueprint(flaskpoc)
 db.create_all()

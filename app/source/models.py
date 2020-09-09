@@ -1,4 +1,4 @@
-from app import db
+from source import db
 from sqlalchemy.dialects.postgresql import JSON
 
 class EmailJson(db.Model):

@@ -1,7 +1,7 @@
 from unittest.mock import Mock,patch
 from parameterized import parameterized
 import unittest
-from app.flaskpoc.controllers import hello,email_json,json_add
+from source.flaskpoc.controllers import hello,email_json,json_add
 from tests.test_constants import *
 
 
@@ -14,7 +14,7 @@ class TestFlaskpoc(unittest.TestCase):
     @parameterized.expand(testdata_email_json)
     def test_email_json(self, _,status,get_data,expected):
         try:
-            with patch('app.emailpoc.atf_email_parsing.ATFEmail.email_data') as email_data_mock:
+            with patch('source.emailpoc.atf_email_parsing.ATFEmail.email_data') as email_data_mock:
                 email_data_mock.return_value = Mock()
                 email_data_mock.return_value.content = get_data
                 email_data_mock.return_value.status_code = status
@@ -32,7 +32,7 @@ class TestFlaskpoc(unittest.TestCase):
     @parameterized.expand(testdata_json_add)
     def test_json_add(self, _, status, post_data, expected):
         try:
-            with patch('app.emailpoc.atf_email_parsing.ATFEmail.email_data') as json_add_mock:
+            with patch('source.emailpoc.atf_email_parsing.ATFEmail.email_data') as json_add_mock:
                 json_add_mock.return_value = Mock()
                 json_add_mock.return_value.content = post_data
                 json_add_mock.return_value.status_code = status

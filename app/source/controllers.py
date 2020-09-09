@@ -1,7 +1,7 @@
 from flask import Blueprint,jsonify
-from app import db
-from app.flaskpoc.models import EmailJson
-from app.emailpoc.atf_email_parsing import ATFEmail
+from source import db
+from source.models import EmailJson
+from source.atf_email_parsing import ATFEmail
 
 flaskpoc = Blueprint('atf', __name__, url_prefix='/')
 
