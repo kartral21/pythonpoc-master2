@@ -1,5 +1,7 @@
 # ATF Proof of concept
 
+Python app on Flask . Run on Docker or Kubenetes
+
 ## Prerequisites
 
 You will need to have a [modern version of `docker`](https://docs.docker.com/engine/release-notes/) 
