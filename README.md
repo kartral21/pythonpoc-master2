@@ -1,6 +1,6 @@
 # ATF Proof of concept
 
-Python app on Flask framework. The flask endpoints are used to parse email on POP server, perform LDAP & PostgreSQL Database operations. Run on Docker or Kubenetes Cluster.
+Python app on Flask framework. The flask endpoints are used to parse email on POP server, perform LDAP & PostgreSQL Database operations. Built and run in a containerized development environment using Docker.Run on Kubenetes Cluster.
 
 ## Prerequisites
 
