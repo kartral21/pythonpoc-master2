@@ -12,7 +12,8 @@ RUN pip install --upgrade pip --no-cache-dir -r requirements.txt
 
 EXPOSE 8081
 
-#RUN app
+#RUN application
+
 ENTRYPOINT ["python"]
 CMD ["app/run.py"]
 
