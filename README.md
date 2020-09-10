@@ -48,12 +48,16 @@ Use kubectl to send the YAML file to Kubernetes by running the following command
 
 ```bash
 $ kubectl apply -f deployment.yaml
+service/pythonpocdocker-service created
+deployment.apps/pythonpocdocker created
 ```
 
 You can see the pods are running if you execute the following command:
 
 ```bash
 $ kubectl get pods
+NAME                               READY   STATUS    RESTARTS   AGE
+pythonpocdocker-7d8549489d-7g9zs   1/1     Running   0          14m
 ```
 ### Verify in Kubernetes
 
