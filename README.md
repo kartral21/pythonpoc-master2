@@ -1,6 +1,6 @@
 # ATF Proof of concept
 
-Python app on Flask connected to PostgreSQL Database. Run on Docker or Kubenetes.
+Python app on Flask framework. The flask endpoints are used to parse email on POP server, perform LDAP & PostgreSQL Database opeations. Run on Docker or Kubenetes.
 
 ## Prerequisites
 
