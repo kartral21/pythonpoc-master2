@@ -55,3 +55,10 @@ You can see the pods are running if you execute the following command:
 ```bash
 $ kubectl get pods
 ```
+### Verify in Kubernetes
+
+```bash
+$ kubectl exec <your_pod_name> -it -- /bin/sh
+$ curl http://127.0.0.1:8081/
+Hello ATF!
+```
