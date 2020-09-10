@@ -1,6 +1,6 @@
 # ATF Proof of concept
 
-Python app on Flask . Run on Docker or Kubenetes.
+Python app on Flask connected to PostgreSQL Database. Run on Docker or Kubenetes.
 
 ## Prerequisites
 
