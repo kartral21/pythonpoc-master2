@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-python-service
+  name: pythonpocdocker-service
 spec:
   selector:
-    app: hello-python
+    app: pythonpocdocker
   ports:
   - protocol: "TCP"
     port: 6000
@@ -15,19 +15,19 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-python
+  name: pythonpocdocker
 spec:
   selector:
     matchLabels:
-      app: hello-python
+      app: pythonpocdocker
   replicas: 1
   template:
     metadata:
       labels:
-        app: hello-python
+        app: pythonpocdocker
     spec:
       containers:
-      - name: hello-python
+      - name: pythonpocdocker
         image: karthikrallapalli/pythonpocdocker
         ports:
         - containerPort: 5000
