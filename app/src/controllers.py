@@ -2,12 +2,21 @@ from flask import Blueprint,jsonify
 from src import db
 from src.models import EmailJson
 from src.atf_email_parsing import ATFEmail
+from src.atf_ldap import ATFLdap
+import json 
 
 flaskpoc = Blueprint('atf', __name__, url_prefix='/')
 
 @flaskpoc.route('/')
 def hello():
     return "Hello ATF!"
+
+@flaskpoc.route('/ldap')
+def helloLdap():
+    atfldap= ATFLdap()
+    ldapdata = atfldap.get_LDAP_user()
+    print(ldapdata["raw_attributes"])
+    return  ldapdata["raw_dn"]
 
 @flaskpoc.route('/json')
 def email_json():
