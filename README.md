@@ -29,3 +29,29 @@ Verify the application
 $ docker exec -it <container_id> /bin/bash
 root@0490887928ef:/app#curl http://127.0.0.1:8081/getall
 ```
+## Running in Kubernetes
+
+### Prerequisites
+You must install and configure the following tools before moving forward
+
+* kubectl(Kuberntes cluster)
+
+### Deploy to Kubernetes
+
+First verify your kubectl is configured. At the command line, type the following
+
+```bash
+$ kubectl version
+```
+
+Use kubectl to send the YAML file to Kubernetes by running the following command
+
+```bash
+$ kubectl apply -f deployment.yaml
+```
+
+You can see the pods are running if you execute the following command:
+
+```bash
+$ kubectl get pods
+```
