@@ -27,7 +27,8 @@ Verify the application
 
 ```bash
 $ docker exec -it <container_id> /bin/bash
-root@0490887928ef:/app#curl http://127.0.0.1:8081/getall
+root@0490887928ef:/app#curl http://127.0.0.1:8081/
+Hello ATF!
 ```
 ## Running in Kubernetes
 
