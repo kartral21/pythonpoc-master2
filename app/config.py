@@ -15,6 +15,9 @@ POSTGRES_DB_DRIVER = config['POSTGRES_DB']['POSTGRES_DRIVER']
 API_HOST = config['API']['HOST']
 API_PORT = config['API']['PORT']
 
+LDAP_HOST = config['LDAP']['HOST']
+LDAP_PORT = config['LDAP']['PORT']
+
 class Config(object):
     DEBUG = False
     TESTING = False

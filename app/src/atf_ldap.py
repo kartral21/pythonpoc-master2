@@ -1,6 +1,7 @@
 from ldap3 import Server, Connection, ALL
+from config import LDAP_HOST, LDAP_PORT
 
-LDAP_URL = '127.0.0.1'
+LDAP_URL = LDAP_HOST+':'+LDAP_PORT
 USER = 'admin'
 PASSWORD = 'atfldap'
 
