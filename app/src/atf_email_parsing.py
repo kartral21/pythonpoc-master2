@@ -17,7 +17,11 @@ class ATFEmail():
             imap = imaplib.IMAP4_SSL("imap.gmail.com")
             # authenticate
             imap.login(username, password)
-            status, messages = imap.select("INBOX")
+            imap.select("INBOX")
+            try:
+                status, messages = imap.search(None, '(UNSEEN)')
+            except:
+                print("No unseen emails...")
             # number of top emails to fetch
             N = 3
             # tuple value
