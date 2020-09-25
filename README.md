@@ -1,4 +1,4 @@
-# ATF Proof of concept
+# Proof of concept
 
 Python app built on Flask framework. The flask endpoints are used to parse email on POP server, perform LDAP & PostgreSQL Database operations. Built and run in a containerized development environment using Docker. Run on Kubernetes Cluster.
 
